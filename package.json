@@ -1,0 +1,12 @@
+{
+  "name": "analizador",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node analizador.js"
+  },
+  "dependencies": {
+    "antlr4": "^4.13.0"
+  }
+}
+
