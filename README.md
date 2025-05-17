@@ -32,9 +32,9 @@ Requisitos
 	• ANTLR4 instalado globalmente o compiladores de ANTLR configurados
 Instalación y uso
 	1. Clonar el repositorio:
-
+cd .......(la direccion de la carpeta donde va abrir el proyecto)
 git clone https://github.com/aleeccortes/Analizador.git
-cd analizador-antlr
+
 
 	2. Instalar dependencias:
 
