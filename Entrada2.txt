@@ -1,0 +1,3 @@
+regla alerta_intento_multiple {
+  si masDeTresIntentosFallidos entonces enviarNotificacion;
+}

@@ -1,0 +1,3 @@
+regla bloquear-acceso {
+  si intentoAccesoFueraHorario entonces agregarUsuarioAListaNegra
+}
