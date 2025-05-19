@@ -1,16 +1,3 @@
-# Analizador de Reglas de Seguridad (ANTLR4 + JavaScript)
-
-Este proyecto implementa un **analizador léxico y sintáctico** para un mini lenguaje de definición de reglas de seguridad, utilizando **ANTLR4** con soporte para **JavaScript**.
-
-## Características
-
-- **Lectura de un archivo de entrada** (`entrada.txt`) con reglas definidas en lenguaje DSL.
-- **Análisis léxico y sintáctico** usando una gramática escrita en `Reglas.g4`.
-- **Extracción de componentes** como identificadores, condiciones y acciones.
-- **Salida estructurada** del análisis (JSON).
-- Manejo de errores léxicos y sintácticos.
-
-## Estructura del lenguaje DSL
 
 El archivo de entrada debe tener el siguiente formato:
 
