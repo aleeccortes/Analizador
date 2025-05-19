@@ -1,10 +1,10 @@
+SINTAXIS Y SEMÁNTICA DE LOS LENGUAJES
+
+Analizador con ANTLR4 Y JavaScript
+
+Este repositorio contiene un analizador léxico,sintático y un intérprete básico para un lenguaje personalizado,generado con ANTLR4 y ejecutado con NODE.JS
 
 
-regla nombre_regla {
-  cuando intentoAccesoFueraHorario
-  entonces agregarUsuarioAListaNegra
-}
-accion 'agregarUsuarioAListaNegra' { }
 
 
 Tecnologías utilizadas
@@ -47,19 +47,8 @@ cambiar entrada.txt por alguna de las siguientes alternativas:
 
 
 
-Salida esperada
-El resultado se imprime por consola con el contenido analizado en formato JSON, por ejemplo:
-
-{
-  "id": "bloqueo_acceso_ilegal",
-  "condicion": ["intentoAccesoFueraHorario"],
-  "comando": "agregarUsuarioAListaNegra"
-}
 
 
 
-regla {
-  si entonces ;
-}
-![image](https://github.com/user-attachments/assets/7af2c1bc-cd8d-49e8-96db-fe2bab5e4866)
+
 
