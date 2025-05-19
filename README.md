@@ -1,6 +1,6 @@
 SINTAXIS Y SEMÁNTICA DE LOS LENGUAJES
 
-Analizador con ANTLR4 Y JavaScript
+ANALIZADOR CON ANTLR4 Y JAVASCRIPT
 
 Este repositorio contiene un analizador léxico,sintático y un intérprete básico para un lenguaje personalizado,generado con ANTLR4 y ejecutado con NODE.JS
 
