@@ -1,7 +1,5 @@
 
-El archivo de entrada debe tener el siguiente formato:
 
-```dsl
 regla nombre_regla {
   cuando intentoAccesoFueraHorario
   entonces agregarUsuarioAListaNegra
@@ -17,26 +15,37 @@ Tecnologías utilizadas
 Requisitos
 	• Node.js instalado
 	• ANTLR4 instalado globalmente o compiladores de ANTLR configurados
+
+
 Instalación y uso
 	1. Clonar el repositorio:
 cd .......(la direccion de la carpeta donde va abrir el proyecto)
-git clone https://github.com/aleeccortes/Analizador.git
+git clone https://github.com/aleeccortes/cortes50856.git
 
 
-	2. Instalar dependencias:
+	
+ 2. Instalar dependencias:
 
 npm install
 
-	3.  Ejecutar el analizador:
 	
-	npm start
+ 3.  Ejecutar el analizador:
+	
+	
+ npm start
 
 
-Archivos importantes
-	• Reglas.g4: Gramática del lenguaje.
-	• analizador.js: Script principal que carga el archivo de entrada y aplica el visitor.
-	• MyVisitor.js: Visitor personalizado que extrae la información relevante.
-	• entrada.txt: Archivo de prueba con reglas DSL.
+ Se pueden cambiar los archivos de entrada para probar distintas entradas para el analizador,en el archivo Analizador.js.En la línea:
+ 
+const input = fs.readFileSync('entrada.txt', 'utf-8');
+
+cambiar entrada.txt por alguna de las siguientes alternativas:
+
+-entrada2.txt
+-entradaIncorrecta1.txt
+-entradaIncorrecta2.txt
+
+
 
 Salida esperada
 El resultado se imprime por consola con el contenido analizado en formato JSON, por ejemplo:
@@ -47,22 +56,6 @@ El resultado se imprime por consola con el contenido analizado en formato JSON, 
   "comando": "agregarUsuarioAListaNegra"
 }
 
-ArchivoDeTexto
-
-VÁLIDOS
-regla bloquear_acceso {
-  si intentoAccesoFueraHorario entonces agregarUsuarioAListaNegra;
-}
-
-regla alerta_intento_multiple {
-  si masDeTresIntentosFallidos entonces enviarNotificacion;
-}
-
-NO VÁLIDOS
-
-regla bloquear-acceso {
-  si intentoAccesoFueraHorario entonces agregarUsuarioAListaNegra
-}
 
 
 regla {
